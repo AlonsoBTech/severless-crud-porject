@@ -19,9 +19,6 @@ Make sure you have the following:
 
 - AWS Account
 - AWS IAM User
-- Python installed
-- IDE of choice to write Python app
-- Docker installed
 
 ## <a name="what-is-being-created">🔋 What Is Being Created</a>
 
@@ -29,9 +26,6 @@ What we will be creating and using:
 
 - Amazon S3 Bucket
 - Lambda Function
-- Elastic Container Registry
-- Python App
-- Docker Image
 
 ## <a name="quick-guide">🤸 Quick Guide</a>
 
