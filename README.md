@@ -98,13 +98,13 @@ Navigate to the Lambda function and check the overview to see the S3 trigger add
 ![lambda overview](https://github.com/user-attachments/assets/4d797ac0-c19c-411a-ba05-f511fd2e17c6)
 
 
-Write the Python code for the lambda function:
+Write the Python code for the lambda function.
 
 ```bash
 import json
 import boto3
 from PIL import Image
-
+import io
  
 s3_client = boto3.client('s3')
 dest_bucket_name = 'aeb-image-scaler-destination'
@@ -148,4 +148,46 @@ def lambda_handler(event, context):
             'body': json.dumps('Error scaling image')
         }
 ```
+
+Click **Deploy** to save the code.
+
+![lambda code deploy](https://github.com/user-attachments/assets/79bbc483-9dfd-4c78-8c65-9a20f6f5fe38)
+
+Configure Lambda policy to have permission to acces the S3 bucket. Select **Configuration**, choose **Permission** and click on the **Role Name**.
+
+![lambda policies](https://github.com/user-attachments/assets/342c48e3-77cf-4d5c-8dc3-1b769f30262d)
+
+Drop down the **Add permissions** and select **Attach policies**.
+
+![attach lambda policy](https://github.com/user-attachments/assets/f7d0d28f-aecf-4aa7-b927-b5d5e58589fe)
+
+Search **S3** and select **AmazonS3FullAccess** then save the permissions.
+
+![Select lambda policy](https://github.com/user-attachments/assets/ed900918-7b72-4a41-a366-a543695c20fe)
+
+Navigate back to the lambda function and configure the timeout so that it will work correctly, go to **Configuration**, select **General Configuration** and click **Edit**. 
+
+![lambda configuration](https://github.com/user-attachments/assets/c7c2228d-9236-484a-a098-a08a656632a8)
+
+Change the **Timeout** to **1 minute**.
+
+![lambda timeout](https://github.com/user-attachments/assets/f3ff78ac-16c0-47a1-ac7e-58f2b0fa8a81)
+
+Now test the Lambda function, navigate to the S3 origin bucket and upload a **JPEG** immage to the **images** folder.
+
+![origin bucket](https://github.com/user-attachments/assets/9a87eace-69af-4d89-9ac5-47d8f4fdcf35)
+
+![origin images](https://github.com/user-attachments/assets/111922b6-2f52-4d37-b679-21079686a7f8)
+
+![images upload](https://github.com/user-attachments/assets/a101e025-7768-41bc-927e-7703c4af50cf)
+
+![upload the image](https://github.com/user-attachments/assets/630798ca-026b-46c5-a42f-df4e47fad213)
+
+![image](https://github.com/user-attachments/assets/a5931138-6271-4a29-ae5f-461f40b1afe4)
+
+
+
+
+
+
 
