@@ -83,7 +83,7 @@ Scroll down to **Event notifications** and click **Create event notification**.
 
 ![origin event](https://github.com/user-attachments/assets/9228958e-5b68-4483-8fbd-da506ee71073)
 
-Give the event a name, set the prefixes for the **images** folder created in the S3 origin bucket, set the suffix so that 
+Give the event a name, set the prefixes as **images** for the folder created in the S3 origin bucket, set the suffix so that 
 any **.jpg** image will trigger the event and choose **Put** as the event type.
 
 ![origin event general conf](https://github.com/user-attachments/assets/7a949018-b366-49ac-8dee-27d4a157df9b)
