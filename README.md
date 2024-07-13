@@ -104,7 +104,7 @@ Write the Python code for the lambda function.
 import json
 import boto3
 from PIL import Image
-import io
+import io.BytesIO
  
 s3_client = boto3.client('s3')
 dest_bucket_name = 'aeb-image-scaler-destination'
@@ -153,7 +153,7 @@ Click **Deploy** to save the code.
 
 ![lambda code deploy](https://github.com/user-attachments/assets/79bbc483-9dfd-4c78-8c65-9a20f6f5fe38)
 
-Configure Lambda policy to have permission to acces the S3 bucket. Select **Configuration**, choose **Permission** and click on the **Role Name**.
+Configure Lambda policy to have permission to access the S3 bucket. Select **Configuration**, choose **Permission** and click on the **Role Name**.
 
 ![lambda policies](https://github.com/user-attachments/assets/342c48e3-77cf-4d5c-8dc3-1b769f30262d)
 
