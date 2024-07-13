@@ -173,7 +173,7 @@ Change the **Timeout** to **1 minute**.
 
 ![lambda timeout](https://github.com/user-attachments/assets/f3ff78ac-16c0-47a1-ac7e-58f2b0fa8a81)
 
-Now test the Lambda function, navigate to the S3 origin bucket and upload a **JPEG** immage to the **images** folder.
+Now test the Lambda function, navigate to the S3 origin bucket and upload a **JPEG** image to the **images** folder.
 
 ![origin bucket](https://github.com/user-attachments/assets/9a87eace-69af-4d89-9ac5-47d8f4fdcf35)
 
