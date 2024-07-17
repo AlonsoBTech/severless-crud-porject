@@ -9,10 +9,11 @@
 
 5. ## <a name="introduction">🤖 Introduction</a>
 
+This project is the implementation of a Severless CRUD Image-Scaler. Amazon S3 is used to
+store uploaded and resized images. AWS Lambda is used to run python code that pulls the 
+uploaded images and resize them in half and then save then to a different location.
+
 ![image](https://github.com/user-attachments/assets/c432e301-8f60-40d9-af21-a4549a0ce356)
-
-
-
 
 ## <a name="prerequisites">⚙️ Prerequisites</a>
 
@@ -108,7 +109,7 @@ from PIL import Image
 import io
 
 s3_client = boto3.client('s3')
-dest_bucket_name = 'aeb-image-scaler-destination'
+dest_bucket_name = 'PLACE_DESTINATION_BUCKET_NAME_HERE'
 
 def lambda_handler(event, context):
     try:
