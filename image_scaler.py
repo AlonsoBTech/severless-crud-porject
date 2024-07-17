@@ -4,7 +4,7 @@ from PIL import Image
 import io
 
 s3_client = boto3.client('s3')
-dest_bucket_name = 'aeb-image-scaler-destination'
+dest_bucket_name = 'PLACE_DESTINATION_BUCKET_NAME_HERE'
 
 def lambda_handler(event, context):
     try:
