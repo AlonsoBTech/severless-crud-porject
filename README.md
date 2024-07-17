@@ -9,8 +9,8 @@
 
 5. ## <a name="introduction">🤖 Introduction</a>
 
-This project is the implementation of a Severless CRUD Image-Scaler Project. Amazon S3 is used to
-store uploaded and resized images. AWS Lambda is used to run python code that pulls the 
+This project is the implementation of a **Severless CRUD Image-Scaler Project**. **Amazon S3** is used to
+store uploaded and resized images. **AWS Lambda** is used to run python code that pulls the 
 uploaded images and resize them in half and then save then to a different location.
 
 ![image](https://github.com/user-attachments/assets/c432e301-8f60-40d9-af21-a4549a0ce356)
