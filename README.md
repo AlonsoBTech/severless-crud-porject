@@ -186,9 +186,12 @@ Now test the Lambda function, navigate to the S3 origin bucket and upload a **JP
 
 ![image](https://github.com/user-attachments/assets/a5931138-6271-4a29-ae5f-461f40b1afe4)
 
+Now navigate to the S3 destination bucket to see resized image.
 
+![navigate to dest](https://github.com/user-attachments/assets/2f758c87-fb64-4c20-bbe8-833157c0fdd8)
 
+![navigate to dest resized](https://github.com/user-attachments/assets/ee847e12-0a68-4377-927c-254495cd3cfd)
 
+![navigate to dest resized images](https://github.com/user-attachments/assets/63c8d3b5-d57a-4a64-b8ea-403b808b9b83)
 
-
-
+![navigate to dest resized images the cloud](https://github.com/user-attachments/assets/c22dc9b6-cdc4-4986-a21a-d878b72b0278)
